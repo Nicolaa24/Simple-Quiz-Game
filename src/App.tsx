@@ -1,8 +1,9 @@
 import React from 'react'
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { Home } from './pages/Home'
-import { Quize } from './pages/Quize'
+import { Quiz } from './pages/Quiz'
 
 export const App = () => {
 
@@ -22,7 +23,7 @@ export const App = () => {
       <div className='flex w-screen h-screen bg-cyan-400'>
         <Routes>
           <Route path='/' element={<Home getUserName={getUserName}/>} />
-          <Route path='/game' element={<Quize userName={user} />} />
+          <Route path='/game' element={<Quiz userName={user} />} />
         </Routes>
       </div>
     </BrowserRouter>

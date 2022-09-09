@@ -15,7 +15,7 @@ interface Props {
 
 const storedBestUSers = JSON.parse(localStorage.getItem('bestResults') ?? JSON.stringify(bestPlayers))
 
-export const Quize: React.FC<Props> = ({ userName }) => {
+export const Quiz: React.FC<Props> = ({ userName }) => {
 
   const [step, setStep] = React.useState(0)
   const [rightAnswer, setRightAnswer] = React.useState(0)
